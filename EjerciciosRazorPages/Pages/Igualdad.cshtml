@@ -1,0 +1,24 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.IgualdadModel
+@{
+}
+<form method="post">
+
+    <h1>Igualdad</h1>
+    <br />
+
+    <p>A : <input type="number" asp-for="a"></p>
+    <p>B : <input type="number" asp-for="b"></p>
+    <p>X : <input type="number" asp-for="x"></p>
+    <p>Y : <input type="number" asp-for="y"></p>
+    <p>N : <input type="number" asp-for="n"></p>
+
+    <p><input type="submit" value="calcular Igualdad"></p>
+
+    <div>
+        <strong>Resultado1 = @Model.resultado1</strong><br/>
+        <strong>Resultado2 = @Model.resultado2</strong><br/>
+        <strong>Resultado3 = @Model.resultado3</strong>
+    </div>
+
+</form>

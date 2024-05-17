@@ -1,0 +1,21 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.CesarModel
+@{
+}
+<form method="post">
+
+    <h1>Desencriptador Cesar</h1>
+    <br />
+    
+    <label for="texto">Texto</label>
+    <textarea asp-for="texto"></textarea>
+    <p>N : <input type="number" asp-for="n"></p>
+
+    <p><input type="submit" value="Encriptar" asp-page-handler="Encriptar"> <input type="submit" value="Desencriptar" asp-page-handler="Desencriptar"></p>
+    
+    <div>
+        
+        <strong>Resultado = @Model.resultado</strong>
+    </div>
+    
+</form>

@@ -1,0 +1,23 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.IMCModel
+@{
+}
+<form method="post">
+
+    <p>Peso:<input type="number" asp-for="peso"></p>
+    <p>Altura:<input type="number" asp-for="altura"></p>
+
+    <p><input type="submit" value="Calcular"></p>
+
+    @if (Model.imc != 0)
+    {
+        <div>
+            <strong>IMC = @Model.imc</strong>
+        </div>
+        <br />
+        <div>
+            <strong>@Model.mensaje</strong>
+        </div>
+
+    }
+</form>
